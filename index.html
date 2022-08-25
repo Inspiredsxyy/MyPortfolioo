@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/2ca85605a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="sohh">SOH <span class="aibb">AIB</span></h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER</p>
+          <h1>HI, I'm <span>Sohaib</span><br />From Morocco</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ----------about----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/ssss.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Sohaib Zrikem, I'm 20 Years Old. I live in Morocco.
+              Since i was a kid I admire using computer especially for playing
+              video games, than i discover new things like coding, and from that
+              time and day after day, I've practicing to improve my skills and
+              experience.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web interfaces</li>
+                <li><span>Web Development</span><br />Web app development</li>
+                <li><span>Photoshop</span><br />Photo editing</li>
+                <li><span>Montage</span><br />Video editing</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Freelancer</span><br />Working with some small
+                  compagnies
+                </li>
+                <li>
+                  <span>National competitor</span><br />Participating in
+                  national event
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>High school graduate</span><br />baccalaureate degree
+                </li>
+                <li>
+                  <span>Undergraduate</span><br />Studying Computer Science
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------services--------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Creating responsive WebSites using HTML/CSS/JS, with high quality
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-image"></i>
+            <h2>Photoshop</h2>
+            <p>Editing photos and videos templates, also color grading</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Video editing</h2>
+            <p>Video editor for Youtube, Facebook, Instagram Reels</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------portfolio--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <a href=""><img src="images/work-1.png" alt="" /></a>
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>TEST1</p>
+            </div>
+          </div>
+          <div class="work">
+            <a href="about.html" target="_blank"
+              ><img src="images/work-2.png"
+            /></a>
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>TEST2</p>
+            </div>
+          </div>
+          <div class="work">
+            <a href="about.html" target="_blank"
+              ><img src="images/work-3.png"
+            /></a>
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>TEST3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------contact--------->
+    <div id="contact">
+      <div class="cantainer">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              ...................................................................................................................................................................................
+            </p>
+            <p><i class="fa-solid fa-paper-plane"></i> sohaizr166@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0621954575</p>
+            <p>
+              ...................................................................................................................................................................................
+            </p>
+            <div class="social-icons">
+              <a href=""><i class="fa fa-facebook"></i> </a>
+              <a href=""><i class="fa fa-instagram"></i> </a>
+              <p>
+                ...................................................................................................................................................................................
+              </p>
+              <h1>Send Me A Message</h1>
+            </div>
+          </div>
+          <div class="contact-right"></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="You Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyMnHSxUqORf6EHl58zORF1ppJDFjF8FBCK218aIxVWlrGuILrTzHdjkBNkZyPZyt9QBg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
